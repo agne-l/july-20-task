@@ -8,8 +8,20 @@ header{
     width:100%;
     display:flex;
     justify-content: space-between;
-    padding:1rem 1.5rem;
+    align-items:center;
+    padding:0.5rem 0.4rem;
+    padding-right:1.5rem;
     box-sizing: border-box;
+}
+
+
+.main-logo-and-language-wrapper img{
+    width:2.5rem;
+    object-fit: cover;
+}
+.main-logo-and-language-wrapper{
+    display:flex;
+    align-items: center;
 }
 
 .logo-name{
@@ -28,7 +40,62 @@ main{
     color: #2f1c6a;
 }
 
-main section:first-child{
+.top-pages{
     text-align:center;
-    padding:1rem 1.5rem;
+    padding:0.3rem 1rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.top-pages section:first-child{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.price{
+    font-size:2.2rem;
+    font-weight:600;
+    display:flex;
+    gap:0.3rem;
+    align-items: baseline;
+    justify-content: center;
+}
+.price span{
+    font-size:1.2rem;
+    font-weight:normal;
+}
+.special-offer{
+    font-size:1.2rem;
+    font-weight:600;
+}
+.bottom-wrapper{
+    /* width:40%; */
+    width:19rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1.5rem;
+    margin-top:1rem;
+}
+.countdown{
+    display:flex;
+    gap:0.2rem;
+    align-items: baseline;
+    width:100%;
+    justify-content: space-evenly;
+}
+.number{
+    font-size:1.4rem;
+    font-weight:600;
+    border:1px solid #2f1c6a;
+    border-radius:10%;
+    padding:1.2rem;
+}
+.choose-plan-button{
+    all:unset;
+    width:100%;
+    background-color: #673de6;
+    color:white;
+    padding:0.8rem 0;
 }
