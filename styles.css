@@ -9,8 +9,8 @@ header{
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:0.5rem 0.4rem;
-    padding-right:1.5rem;
+    padding:1vw 1vw;
+    padding-right:2vw;
     box-sizing: border-box;
 }
 
@@ -40,18 +40,22 @@ main{
     color: #2f1c6a;
 }
 
-.top-pages{
+.top-wrapper{
     text-align:center;
     padding:0.3rem 1rem;
     display:flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
+    gap:1rem;
 }
-.top-pages section:first-child{
+.top-wrapper section:first-child{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    width:95vw;
+    height:65vh;
 }
 .price{
     font-size:2.2rem;
@@ -68,6 +72,7 @@ main{
 .special-offer{
     font-size:1.2rem;
     font-weight:600;
+    margin-top:0.5rem;
 }
 .bottom-wrapper{
     /* width:40%; */
@@ -98,4 +103,68 @@ main{
     background-color: #673de6;
     color:white;
     padding:0.8rem 0;
+    border-radius:5px;
+    font-weight:600;
+}
+
+.top-wrapper section:last-child{
+    /* width:95vw; */
+    border:1px solid blue;
+    width:95vw;
+    height:65vh;
+    box-sizing: border-box;
+}
+
+.top-wrapper section:last-child header{
+    background-color: pink;
+    width:100%;
+    height:4vw;
+    display:flex;
+    justify-content: space-between;
+    padding:0;
+}
+.menu-button{
+    all:unset;
+    width:4vw;
+    height:4vw;
+    border-right:1px solid blue;
+    font-size:1vw;
+}
+.header-wrapper{
+    height:100%;
+    width:40vw;
+    display:flex;
+    justify-content: flex-end;
+    gap:1vw;
+}
+.preview-button{
+    all:unset;
+    font-size:1vw;
+    width:5vw;
+    height:100%;
+}
+.publish-button{
+    all:unset;
+    font-size:1vw;
+    width:10vw;
+    height:100%;
+    background-color: #673de6;
+    color:white;
+}
+
+
+.top-wrapper section:last-child main{
+    /* height:10vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center; */
+    height:60vw;
+}
+.toolbar{
+    width:4vw;
+    height:100%;
+    border-right:1% solid blue;
+    background-color: bisque;
+
 }
