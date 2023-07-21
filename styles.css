@@ -247,3 +247,49 @@ main{
     object-fit:cover;
     overflow:hidden;
 }
+
+.ratings{
+    display:flex;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+    /* padding:0 0.5rem; */
+    /* box-sizing: border-box; */
+
+}
+
+.square{
+    width:5vw;
+    height:5vw;
+    background-color: rgb(58, 139, 58);
+}
+.square img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.stars{
+    display:flex;
+    width:30vw;
+    justify-content: space-between;
+}
+.ratings-and-reviews{
+    width:30vw;
+    display:flex;
+    font-size: 2vw;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+}
+.reviews{
+    display: flex;
+}
+.platform-name{
+    font-size:3vw;
+    font-weight:600;
+}
+.text-wrapper{
+    text-align:center;
+    padding:0.3rem 1rem;
+}
