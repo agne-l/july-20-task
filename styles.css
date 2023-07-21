@@ -369,13 +369,28 @@ main{
     border-top:none;
     width:70vw;
     margin:auto;
+    display:flex;
     align-items:center;
+    justify-content: center;
 }
 
 .learn-more-button{
     all:unset;
+    display:inline-block;
+    width:20vw;
+    height:6vh;
+    color:#673de6;
 }
 
+.payment-conditions{
+    width:95vw;
+    margin:auto;
+    text-align:center;
+}
+
+.payment-conditions a{
+    text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
     .plan-info{
@@ -387,5 +402,9 @@ main{
     .middle{
         border-left: 1px solid blue;
     }
+    .button-container{
+        display:none;
+    }
+
 }
 
