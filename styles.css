@@ -4,13 +4,7 @@ html{
 body{
     margin:0;
 }
-/* .page-wrapper{
-    display:flex;
-    width:100%;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-} */
+
 header{
     width:100%;
     display:flex;
@@ -77,15 +71,13 @@ main{
 .top-wrapper{
     display:flex;
     flex-direction: column;
-    gap:2rem;
+    gap:1.6rem;
     width:90vw;
     margin:auto;
 }
 .top-wrapper section:first-child{
     display:flex;
     flex-direction:column;
-    text-align: left;
-    /* align-items: center; */
     text-align:center;
 }
 .price{
@@ -100,13 +92,13 @@ main{
     font-weight:normal;
 }
 .special-offer{
-    font-size:1.2rem;
+    font-size:1.1rem;
     font-weight:600;
     padding-top:0.5rem;
     /* color:#2f1c6a; */
 }
 .bottom-wrapper{
-    /* width:50%; */
+    width:70%;
     margin:auto;
     display:inline;
     display:flex;
@@ -124,7 +116,6 @@ main{
 }
 .number{
     font-size:1.4rem;
-    /* font-weight:600; */
     border:1px solid #2f1c6a;
     border-radius:10%;
     padding:1.2rem;
@@ -294,6 +285,45 @@ main{
     text-decoration: none;
 }
 
+.options{
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+#dropdownInput{
+    width:80%;
+    margin:auto;
+    padding:4px;
+}
+.options ul{
+    display:flex;
+    list-style: none;
+    display:none;
+}
+.options ul li{
+    /* padding:0 1.5rem; */
+    padding-bottom:1rem;
+    border-bottom:1px solid grey;
+}
+.options ul a{
+    text-decoration: none;
+    color:grey;
+    padding:0 1.5rem;
+    padding-bottom:1rem;
+}
+.options ul a:hover{
+    text-decoration: none;
+    color:#673de6;
+    font-weight:600;
+    border-bottom:3px solid #673de6;
+}
+/* .options ul li:hover{
+    border-bottom:3px solid #673de6;
+    color:#673de6;
+} */
+
+
 @media screen and (min-width: 768px) {
     .language-wrapper{
         display:flex;
@@ -310,7 +340,12 @@ main{
         width:70vw;
     }
     .top-wrapper section:first-child{
-        text-align:auto;
+        width:40%;
+        text-align:left;
+    }
+    .bottom-wrapper{
+        margin:0;
+        margin-top:1rem;
     }
     .top-wrapper section:last-child{
         width:60%;
@@ -319,6 +354,7 @@ main{
         width:100%;
         height:100%;
         object-fit:contain;
+        margin-left:6rem;
     }
     .plan-info{
         flex-direction:row;
@@ -330,6 +366,13 @@ main{
         border-left: 1px solid blue;
     }
     .button-container{
+        display:none;
+    }
+    .options ul{
+        display:flex;
+        list-style: none;
+    }
+    #dropdownInput{
         display:none;
     }
 
