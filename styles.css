@@ -386,21 +386,27 @@ main{
     #dropdownInput{
         display:none;
     }
-    .picture-wrapper{
-        flex-direction:row;
-        width:98%;
-        margin:auto;
-        height:13rem;
-        justify-content: space-between;
-        gap:1rem;
-    }
-    .picture-wrapper img{
-        width:25%;
-    }
-    .hidden-picture{
-        display:block;
+
+    .picture-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+        justify-content: space-evenly;
+      }
+      
+      .picture-wrapper img {
+        width: 30%;
+        height: 100%;
         object-fit: contain;
-    }
+      }
+      
+      .hidden-picture {
+        display: block;
+        width: 10% !important;
+        height: 100%;
+      }
+
 
 }
 
