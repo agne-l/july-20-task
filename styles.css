@@ -318,10 +318,21 @@ main{
     font-weight:600;
     border-bottom:3px solid #673de6;
 }
-/* .options ul li:hover{
-    border-bottom:3px solid #673de6;
-    color:#673de6;
-} */
+.picture-wrapper{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    margin:auto;
+    align-items: center;
+    gap:1rem;
+    padding-top:1.5rem;
+}
+.picture-wrapper img{
+    width:100%;
+}
+.hidden-picture{
+    display:none;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -374,6 +385,21 @@ main{
     }
     #dropdownInput{
         display:none;
+    }
+    .picture-wrapper{
+        flex-direction:row;
+        width:98%;
+        margin:auto;
+        height:13rem;
+        justify-content: space-between;
+        gap:1rem;
+    }
+    .picture-wrapper img{
+        width:25%;
+    }
+    .hidden-picture{
+        display:block;
+        object-fit: contain;
     }
 
 }
