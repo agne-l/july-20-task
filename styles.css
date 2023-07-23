@@ -148,6 +148,15 @@ main{
     text-align:center;
 }
 
+.money-back-guarantee{
+    display:flex;
+    align-items: center;
+    gap:0.3rem;
+}
+.money-back-guarantee img{
+    width:1.2rem;
+}
+
 .top-wrapper section:last-child{
     width:100%;
 }
@@ -160,43 +169,25 @@ main{
 
 .ratings{
     display:flex;
-    /* width:90%; */
     width:95vw;
     margin:auto;
     margin-bottom:2rem;
     justify-content: center;
-    gap:6vw;
-    /* padding:0 0.5rem; */
-    /* box-sizing: border-box; */
+    gap:8%;
+    color:black;
 }
 
-.square{
-    /* width:5vw; */
-    width: 2.5rem;
-    background-color: rgb(0, 182, 122);
-    padding:5px;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: middle;
-}
-.square img{
-    /* width:100%;
-    height:100%; */
-    width: 1.5rem;
-    object-fit:cover;
-}
 .stars{
-    display:flex;
-    /* width:30vw; */
-    width:13.5rem;
-    justify-content: space-between;
-}
-.ratings-and-reviews{
-    /* width:30vw; */
     width:13rem;
+    object-fit:contain;
+    margin-top:0.5rem;
+}
+
+.ratings-and-reviews{
     display:flex;
-    font-size: 0.9rem;
     justify-content: space-between;
+    font-size:14px;
+    margin-top:0.2rem;
 }
 .rating{
     font-weight: 600;
@@ -205,8 +196,13 @@ main{
     font-weight: 600;
 }
 .platform-name{
-    /* font-size:3vw; */
+    font-size:22px;
     font-weight:600;
+    display:flex;
+    align-items: center;
+}
+.platform-name img{
+    width:2rem;
 }
 .text-wrapper{
     text-align:center;
@@ -241,10 +237,7 @@ main{
 .info-wrapper{
     width:90%;
 }
-/* .free-domain{
-    grid-column-start:2;
-    grid-column-end: 3;
-} */
+
 .middle{
     display:flex;
     flex-direction: column;
@@ -324,6 +317,8 @@ main{
 
 .payment-conditions a{
     text-decoration: none;
+    color:#673de6;
+    font-weight: 600;
 }
 
 .options{
@@ -421,6 +416,9 @@ main{
         object-fit:contain;
         margin-left:6rem;
     }
+    .ratings{
+        gap:25%;
+    }
     .plan-info{
         flex-direction:row;
     }
@@ -447,18 +445,18 @@ main{
         width: 95%;
         margin: auto;
         justify-content: space-evenly;
-      }
+    }
       
-      .picture-wrapper img {
+    .picture-wrapper img {
         width: 30%;
         height: 100%;
         object-fit: contain;
-      }
+    }
       
-      .hidden-picture {
+    .hidden-picture {
         display: block;
         width: 10% !important;
-      }
+    }
 
 
 }
