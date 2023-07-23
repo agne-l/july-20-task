@@ -13,6 +13,10 @@ header{
     padding:1vw 1vw;
     padding-right:2vw;
     box-sizing: border-box;
+    position:sticky;
+    top:0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(182, 182, 182, 0.2);
 }
 
 .logo-and-language-wrapper{
@@ -37,7 +41,7 @@ header{
 
 .navigation-and-login-wrapper{
     display:flex;
-    gap:1rem;
+    gap:2rem;
 }
 .navigation-and-login-wrapper ul{
     /* display:flex;
@@ -48,6 +52,21 @@ header{
 .navigation-and-login-wrapper ul a{
     text-decoration:none;
     color:grey;
+}
+
+.button-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.login-btn{
+    all:unset;
+    border:1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    display:none;
 }
 
 .logo-name{
@@ -74,6 +93,7 @@ main{
     gap:1.6rem;
     width:90vw;
     margin:auto;
+    margin-bottom:6rem;
 }
 .top-wrapper section:first-child{
     display:flex;
@@ -83,9 +103,6 @@ main{
 .price{
     font-size:2.2rem;
     font-weight:600;
-    /* display:flex; */
-    /* gap:0.3rem; */
-    /* align-items: baseline; */
 }
 .price span{
     font-size:1.2rem;
@@ -95,7 +112,7 @@ main{
     font-size:1.1rem;
     font-weight:600;
     padding-top:0.5rem;
-    /* color:#2f1c6a; */
+    margin:0;
 }
 .bottom-wrapper{
     width:70%;
@@ -146,6 +163,7 @@ main{
     /* width:90%; */
     width:95vw;
     margin:auto;
+    margin-bottom:2rem;
     justify-content: center;
     gap:6vw;
     /* padding:0 0.5rem; */
@@ -156,31 +174,35 @@ main{
     /* width:5vw; */
     width: 2.5rem;
     background-color: rgb(0, 182, 122);
+    padding:5px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
 }
 .square img{
     /* width:100%;
     height:100%; */
-    width: 2.5rem;
+    width: 1.5rem;
     object-fit:cover;
 }
 .stars{
     display:flex;
     /* width:30vw; */
-    width:13rem;
+    width:13.5rem;
     justify-content: space-between;
 }
 .ratings-and-reviews{
     /* width:30vw; */
     width:13rem;
     display:flex;
-    /* font-size: 2vw; */
+    font-size: 0.9rem;
     justify-content: space-between;
 }
 .rating{
-    display: flex;
+    font-weight: 600;
 }
 .reviews{
-    display: flex;
+    font-weight: 600;
 }
 .platform-name{
     /* font-size:3vw; */
@@ -237,6 +259,24 @@ main{
 .middle h3{
     font-size:1.3vw;
 }
+
+.special-price{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+.special-price span:first-child{
+    text-decoration: line-through;
+}
+.special-price span:last-child{
+    background-color: #cfc3f1;
+    color:#673de6;
+    font-weight: 600;
+    padding:8px 10px;
+    border-radius:40px;
+
+}
+
 .add-to-the-basket-button{
     all:unset;
     width:80%;
@@ -249,10 +289,10 @@ main{
 .condition{
     font-size:0.8vw;
 }
-.special-offer{
-    /* color:#673de6; */
-    margin:0;
+.free-for-three-months{
+    color:#673de6;
 }
+
 #hidden-element{
     display:none;
 }
@@ -279,6 +319,7 @@ main{
     width:95vw;
     margin:auto;
     text-align:center;
+    margin-top:1.5rem;
 }
 
 .payment-conditions a{
@@ -344,7 +385,20 @@ main{
     .navigation-and-login-wrapper ul{
         display:flex;
         list-style:none;
-        gap:1rem;
+        gap:2.5rem;
+    }
+    .login-btn{
+        all:unset;
+        border:2px solid black;
+        padding: 12px 16px;
+        border-radius: 5px;
+        font-weight:600;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .burger-menu img{
+        display:none;
     }
     .top-wrapper{
         flex-direction:row;
@@ -404,7 +458,6 @@ main{
       .hidden-picture {
         display: block;
         width: 10% !important;
-        height: 100%;
       }
 
 
