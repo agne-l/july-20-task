@@ -24,6 +24,12 @@ header{
     align-items: center;
     gap:1rem;
 }
+.logo-and-language-wrapper a{
+    text-decoration: none;
+}
+.logo-name{
+    color:black;
+}
 .logo-and-language-wrapper img{
     width:2.5rem;
     object-fit: cover;
@@ -51,7 +57,10 @@ header{
 }
 .navigation-and-login-wrapper ul a{
     text-decoration:none;
-    color:grey;
+    color:black;
+}
+.navigation-and-login-wrapper ul a:hover{
+    color:grey;   
 }
 
 .button-wrapper{
@@ -67,6 +76,9 @@ header{
     padding: 10px;
     border-radius: 5px;
     display:none;
+}
+.login-btn:hover{
+    color:grey;
 }
 
 .logo-name{
@@ -207,23 +219,20 @@ main{
 .text-wrapper{
     text-align:center;
     padding:0.3rem 1rem;
-    width:70vw;
+    width:90vw;
     margin:auto;
 }
 
 .plan-info{
-    /* display:grid;
-    grid-template-columns: 1fr 1fr; */
     display:flex;
     flex-direction:row-reverse;
-    width:70vw;
+    width:90vw;
     margin:auto;
     justify-items: center;
-    /* gap:2%; */
     padding:2% 0;
-    border: 1px solid blue;
-    /* box-sizing: border-box; */
+    border: 1px solid rgb(141, 141, 232);
     font-size:14px;
+    margin-top:1rem;
 }
 .plan-info ul{
     display:flex;
@@ -244,15 +253,15 @@ main{
     gap:10px;
     align-items:center;
     /* border-left: 1px solid blue; */
-    border-right: 1px solid blue;
+    border-right: 1px solid rgb(141, 141, 232);
     text-align:center;
     padding-left:2vw;
     padding-right:2vw;
 }
-.middle h3{
-    font-size:1.3vw;
-}
 
+.info-wrapper li span{
+    font-weight:600;
+}
 .special-price{
     display: flex;
     gap:1rem;
@@ -262,7 +271,7 @@ main{
     text-decoration: line-through;
 }
 .special-price span:last-child{
-    background-color: #cfc3f1;
+    background-color: #e8e1ff;
     color:#673de6;
     font-weight: 600;
     padding:8px 10px;
@@ -275,13 +284,11 @@ main{
     width:80%;
     background-color: #673de6;
     color:white;
-    padding:0.6rem 0;
+    padding:0.8rem 0;
     border-radius:5px;
     font-weight:600;
 }
-.condition{
-    font-size:0.8vw;
-}
+
 .free-for-three-months{
     color:#673de6;
 }
@@ -291,9 +298,9 @@ main{
 }
 
 .button-container{
-    border:1px solid blue;
+    border:1px solid rgb(141, 141, 232);
     border-top:none;
-    width:70vw;
+    width:90vw;
     margin:auto;
     display:flex;
     align-items:center;
@@ -303,7 +310,7 @@ main{
 .learn-more-button{
     all:unset;
     display:inline-block;
-    width:20vw;
+    width:30vw;
     height:6vh;
     color:#673de6;
 }
@@ -319,6 +326,10 @@ main{
     text-decoration: none;
     color:#673de6;
     font-weight: 600;
+}
+
+.payment-conditions a:hover{
+    color:rgba(71, 28, 202, 0.875);
 }
 
 .options{
@@ -362,6 +373,7 @@ main{
     align-items: center;
     gap:1rem;
     padding-top:1.5rem;
+    padding-bottom:2rem;
 }
 .picture-wrapper img{
     width:100%;
@@ -369,6 +381,17 @@ main{
 .hidden-picture{
     display:none;
 }
+
+button:hover{
+    cursor:pointer;
+}
+.choose-plan-button:hover{
+    background-color: rgba(71, 28, 202, 0.875);
+}
+.add-to-the-basket-button:hover{
+    background-color: rgba(71, 28, 202, 0.875);
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -421,15 +444,19 @@ main{
     }
     .plan-info{
         flex-direction:row;
+        width:70vw;
     }
     #hidden-element{
         display: block;
     }
     .middle{
-        border-left: 1px solid blue;
+        border-left: 1px solid rgb(141, 141, 232);
     }
     .button-container{
         display:none;
+    }
+    .text-wrapper{
+        width:70vw;
     }
     .options ul{
         display:flex;
